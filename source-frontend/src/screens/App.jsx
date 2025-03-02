@@ -7,7 +7,7 @@ function App() {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const ws = new WebSocket('ws://26.34.123.216:8082/messages');
+    const ws = new WebSocket('ws://192.168.253.135:8082/messages');
     setSocket(ws);
 
     ws.onopen = () => console.log('Connected to Message Service');

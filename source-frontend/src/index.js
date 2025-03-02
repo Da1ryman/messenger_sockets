@@ -11,8 +11,8 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path='/' element={<Messenger/>}/>
-        <Route path='/app' element={<App/>}/>
+        <Route path='/app' element={<Messenger/>}/>
+        <Route path='/' element={<App/>}/>
       </Routes>
     </Router>
   </React.StrictMode>
