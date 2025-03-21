@@ -1,0 +1,26 @@
+.footer-container {
+    width: 100%;
+    background-color: #007bff;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-container:hover {
+    background-color: #0056b3;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-navbar {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 5px;
+        border-radius: 0;
+    }
+}

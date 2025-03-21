@@ -1,15 +1,22 @@
 import Header from "../components/header/Header";
 import Chat from "../components/body/Chat";
 import Footer from "../components/footer/Footer.jsx";
+import "./App.css";
 
 const App = () => {
     return (
-        <div style={{display:"grid", gridTemplateRows: "57px auto 54px", height: "100vh"}}>
-            <Header />
-            <Chat/>
-            <Footer/>
+        <div className="app-container">
+            <div className="header-section">
+                <Header />
+            </div>
+            <div className="chat-section">
+                <Chat />
+            </div>
+            <div className="footer-section">
+                <Footer />
+            </div>
         </div>
-    )
-}
+    );
+};
 
 export default App;

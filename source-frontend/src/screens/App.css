@@ -1,0 +1,36 @@
+.app-container {
+    display: grid;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.header-section {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.chat-section {
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section {
+    background-color: #ffffff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        grid-template-rows: 50px auto 50px;
+    }
+
+    .chat-section {
+        margin: 5px;
+        border-radius: 5px;
+    }
+}

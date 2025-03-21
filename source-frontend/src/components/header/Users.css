@@ -1,0 +1,51 @@
+.user-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-button .user-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.user-button .user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+}
+
+@media (max-width: 768px) {
+    .user-button {
+        padding: 8px 12px;
+    }
+
+    .user-button .user-name {
+        font-size: 1rem;
+    }
+
+    .user-button .user-avatar {
+        width: 40px;
+        height: 40px;
+    }
+}

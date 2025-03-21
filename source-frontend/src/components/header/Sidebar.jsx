@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Offcanvas } from "react-bootstrap";
 import Users from "./Users";
+import "./Sidebar.css";
 
 const Sidebar = () => {
     const [show, setShow] = useState(false);
@@ -9,20 +10,20 @@ const Sidebar = () => {
 
     return (
         <>
-            <Button variant="light" onClick={handleShow}>
-                Все пользователи 
+            <Button variant="primary" className="sidebar-button" onClick={handleShow}>
+                Все пользователи
             </Button>
 
-            <Offcanvas show={show} onHide={handleClose}>
-                <Offcanvas.Header closeButton className="border-primary-subtle bg-info">
-                    <Offcanvas.Title className="text-light">Пользователи</Offcanvas.Title>
+            <Offcanvas show={show} onHide={handleClose} placement="end">
+                <Offcanvas.Header closeButton className="offcanvas-header">
+                    <Offcanvas.Title className="offcanvas-title">Пользователи</Offcanvas.Title>
                 </Offcanvas.Header>
-                <Offcanvas.Body>
-                    <Users/>
+                <Offcanvas.Body className="offcanvas-body">
+                    <Users />
                 </Offcanvas.Body>
             </Offcanvas>
         </>
-    )
-}
+    );
+};
 
 export default Sidebar;

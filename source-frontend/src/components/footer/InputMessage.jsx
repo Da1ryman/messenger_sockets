@@ -1,17 +1,18 @@
-import { Button, Form } from "react-bootstrap"
+import { Button, Form } from "react-bootstrap";
 import { BsArrowUp } from "react-icons/bs";
+import "./InputMessage.css";
 
 const InputMessage = () => {
     return (
-        <Form className="w-100" style={{display:'grid', gridTemplateColumns: 'auto 40px'}}>
-            <Form.Group className="me-4">
-                <Form.Control type="text" placeholder="Message..." />
+        <Form className="input-message-container">
+            <Form.Group className="flex-grow-1 me-2">
+                <Form.Control type="text" placeholder="Введите сообщение..." />
             </Form.Group>
-            <Button variant="light">
+            <Button variant="primary">
                 <BsArrowUp />
             </Button>
         </Form>
-    )   
-}
+    );
+};
 
 export default InputMessage;
